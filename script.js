@@ -6,4 +6,3 @@ console.log("Dhruvin Mavani")
 }
 console.log(a); // ?
 console.log(b); // ?
-  
