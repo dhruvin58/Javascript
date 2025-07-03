@@ -1,0 +1,22 @@
+body{
+    background-color: green;
+}
+.Heading1
+{
+    background-color: red;
+    color: white;
+}
+.Heading2
+{
+    background-color: yellow;
+    color: white;
+}
+.Heading3
+{
+    background-color: orange;
+    color: white;
+}
+.button
+{
+    color: red;
+}
