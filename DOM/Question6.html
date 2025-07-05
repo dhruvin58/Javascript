@@ -1,0 +1,53 @@
+<!-- Change the text content of a paragraph when a button is clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    <p id="para1">Welcome do the dynamically typed JavaScript page. Add Button to see some change</p><br>
+    <button id="btn1">Click Me!!</button>
+    <button id="btn2">Click Me To Remove The Paragraph!!</button>
+
+    <script>
+        const para = document.querySelector("#para1");
+        const btn = document.querySelector("#btn1");
+        const btn1 = document.querySelector("#btn2");
+
+    let newPara = null;
+
+    const clickEvent = () =>
+    {
+        const string = "content is changed";
+        para.textContent = string;
+    }
+
+    const appendPara = () =>
+    {
+        if(!newPara)
+        {
+            newPara = document.createElement("p");
+            newPara.innerText = "This is newly Added Paragraph..";
+            document.body.appendChild(newPara);
+        }
+    }
+
+    const removePara = () =>
+    {
+        if(newPara)
+        {
+            document.body.removeChild(newPara);
+            newPara = null;
+        }
+        newPara.removeChild("newPara");
+    }
+
+    btn.addEventListener("click",clickEvent);
+    btn.addEventListener("click",appendPara);
+    btn1.addEventListener("click",removePara);
+    </script>
+</body>
+</html>
