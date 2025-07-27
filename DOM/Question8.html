@@ -1,0 +1,54 @@
+<!-- ✅ Question 8: Dynamic List Generator
+Write JavaScript code that:
+
+Waits for the window to load
+
+Creates an unordered list (<ul>) with 5 <li> items
+
+Sets each <li> to say: Item 1, Item 2, etc.
+
+Appends the list to a <div id="container"> already present in HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+<body>
+    <div id="container">Hello this is div which will going to append list</div>
+    <script>
+    window.onload = () =>
+    {
+        const ul_element = document.createElement("ul");
+        const li_element1 = document.createElement("li");
+        const li_element2 = document.createElement("li"); 
+        const li_element3 = document.createElement("li"); 
+        const li_element4 = document.createElement("li"); 
+        const li_element5 = document.createElement("li");
+        const li_text1 = document.createTextNode("Item 1");
+        const li_text2 = document.createTextNode("Item 2");
+        const li_text3 = document.createTextNode("Item 3");
+        const li_text4 = document.createTextNode("Item 4");
+        const li_text5 = document.createTextNode("Item 5");
+
+        li_element1.appendChild(li_text1);
+        li_element2.appendChild(li_text2);
+        li_element3.appendChild(li_text3);
+        li_element4.appendChild(li_text4);
+        li_element5.appendChild(li_text5);
+
+        ul_element.appendChild(li_element1);
+        ul_element.appendChild(li_element2);
+        ul_element.appendChild(li_element3);
+        ul_element.appendChild(li_element4);
+        ul_element.appendChild(li_element5);
+
+        const div_ref = document.getElementById("container");
+        div_ref.appendChild(ul_element);
+
+    }
+    </script>
+</body>
+</html>

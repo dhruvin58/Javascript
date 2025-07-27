@@ -1,0 +1,41 @@
+<!-- ✅ Question 2: Highlight Clicked Element
+There are 10 <p> tags on the page. Write code that:
+
+Selects all of them
+
+When any of them is clicked, it:
+
+Changes its background to yellow
+
+Logs its innerHTML content in the console -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+    <p>Paragraph 5</p>
+    <p>Paragraph 6</p>
+    <p>Paragraph 7</p>
+    <p>Paragraph 8</p>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+    <script>
+        const ref = document.querySelectorAll("p");
+
+        ref.forEach(element => {
+            element.addEventListener("click", ()=>
+            {
+                element.style.backgroundColor = "yellow";
+            });
+        });
+    
+    </script>
+</body>
+</html>

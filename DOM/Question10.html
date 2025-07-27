@@ -1,0 +1,37 @@
+<!-- ✅ Question 3: Attribute Checker
+An image is present like this:
+
+html
+Copy code
+<img id="hero" src="banner.jpg" alt="Main Banner">
+Write code that:
+
+Logs the current src and alt attributes of the image
+
+Changes alt to “New Banner Image”
+
+Sets a new width attribute to 300 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+    <img id="hero" src="dhruvin mavani.jpg" alt="Main Banner">
+
+    <script>
+        const img_ref = document.getElementById("hero");
+        const attr_src = img_ref.getAttribute("src");
+        const attr_alt = img_ref.getAttribute("alt");
+        console.log(attr_alt);
+        console.log(attr_src);
+
+        img_ref.setAttribute("alt","New Banner Image");
+        img_ref.setAttribute("width","300");
+    </script>
+
+</body>
+</html>

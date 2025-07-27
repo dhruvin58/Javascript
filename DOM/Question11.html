@@ -1,0 +1,36 @@
+<!-- ✅ Question 5: Create and Insert a Modal
+Write JavaScript to:
+
+Create a <div> with class modal
+
+Inside it, add a heading <h2> and a <p> with some text
+
+Apply some styles using .style
+
+Add it at the end of the <body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+<body>
+    <script>
+        const div_ref = document.createElement("div");
+        div_ref.setAttribute("class","modal");
+        
+        const heading_2 = document.createElement("h2");
+        const Paragraph = document.createElement("p");
+        Paragraph.innerHTML = "Hello this is run time paragraph";
+        Paragraph.style.color = "red";
+
+        div_ref.appendChild(heading_2);
+        div_ref.appendChild(Paragraph);
+
+        document.body.appendChild(div_ref);
+    </script>
+    
+</body>
+</html>
